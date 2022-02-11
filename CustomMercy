@@ -1,0 +1,60 @@
+#Mercy by Shawn Mendes
+
+use_bpm 148
+use_synth :piano
+
+#treble clef
+live_loop:mercy1 do
+  #measure 1
+  sleep 1
+  play :a4
+  sleep 0.5
+  play :b4
+  sleep 0.5
+  play :d5
+  sleep 1
+  play :b4, sustain: 2
+  sleep 2
+  
+  #measure 2
+  play :b4
+  sleep 0.5
+  play :d4
+  sleep 0.5
+  play :e4
+  sleep 1
+  play :c4, sustain: 2
+  sleep 2
+  
+  #measure 3
+  play :c4
+  sleep 0.5
+  play :d4
+  sleep 0.5
+  play :e4
+  sleep 1
+  play :f4, sustain: 2
+  sleep 1
+  play :c4, sustain: 2
+  sleep 4
+end
+
+#bass clef
+live_loop:mercy2 do
+  #measure 1
+  play :g3, sustain: 4
+  play :e3, sustain: 4
+  play :b2, sustain: 4
+  sleep 4
+  
+  #measure 2
+  play :g3, sustain: 4
+  play :d3, sustain: 4
+  play :b2, sustain: 4
+  sleep 4
+  
+  #measure 3
+  play :f3, sustain: 4
+  play :d3, sustain: 4
+  play :b2, sustain: 4
+end
