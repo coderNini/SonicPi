@@ -4,6 +4,8 @@ use_bpm 148
 
 use_synth :piano
 
+vocals = "C:/Users/nia_robinson/Documents/Audacity/Mercy (ACAPELLA) Clip.wav"
+
 define :my_fxn do
   play :a4, amp: 10
   sleep 0.5
@@ -100,6 +102,8 @@ end
 
 live_loop:treble_clef2 do
   sleep 32
+  #enter vocals
+  sample vocals, amp: 5
   1.times do
     with_fx :hpf do
       #measure 9
@@ -187,7 +191,7 @@ end
 sleep 16
 
 live_loop:bass_clef do
-  2.times do
+  3.times do
     with_fx :hpf do
       #measure 1
       bc1 20
@@ -205,7 +209,7 @@ live_loop:bass_clef do
   stop
 end
 
-sleep 32
+sleep 48
 
 live_loop:bass_clef_end do
   with_fx :hpf do
