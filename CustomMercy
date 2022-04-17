@@ -6,6 +6,10 @@ use_synth :piano
 
 vocals = "C:/Users/nia_robinson/Documents/Audacity/Mercy (ACAPELLA) Clip.wav"
 
+dun = "/Users/queennini/Downloads/DunDunDun.wav"
+
+R2D = "/Users/queennini/Downloads/ReadyToDie.wav"
+
 define :my_fxn do
   play :a4, amp: 10
   sleep 0.5
@@ -50,9 +54,14 @@ s = [1, 1, 1.5, 0.5]
 
 x = 0
 
+#INTRO
+sample dun
+sleep 5
+sample R2D
 
 #bass clef
 live_loop:bass_clef_fade do
+  sleep 4
   1.times do
     with_fx :hpf do
       #measure 1
@@ -73,6 +82,7 @@ end
 
 #treble clef
 live_loop:treble_clef do
+  sleep 4
   2.times do
     with_fx :hpf do
       #measures 1 and 5
