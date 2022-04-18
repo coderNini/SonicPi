@@ -6,6 +6,10 @@ use_synth :piano
 
 heartless = "C:/Users/nia_robinson/Desktop/Heartless (ACAPELLA).wav.wav"
 
+beat_drop = "/Users/queennini/Downloads/HG_Beat2.wav"
+
+HBK = "/Users/queennini/Downloads/HBK_aSample.wav"
+
 x = 2
 define :bass1 do |n|
   4.times do
@@ -65,7 +69,7 @@ define :b_and_a do |st, a, x, st2, xx|
   sleep xx
 end
 
-sample heartless
+sample heartless #TRANSITION
 
 live_loop :treble_clef do
   sleep 13.6
@@ -175,3 +179,9 @@ live_loop :bass_clef do
     stop
   end
 end
+
+sleep 45.55
+sample beat_drop
+
+sleep 15.8
+sample HBK #OUTRO
