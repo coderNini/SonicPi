@@ -1,14 +1,14 @@
 # Holy Grail by Justin Timberlake ft. Jay Z
 
-use_bpm 72
+use_bpm 73
 
 use_synth :piano
 
-heartless = "C:/Users/nia_robinson/Desktop/Heartless (ACAPELLA).wav.wav"
+heartless = "/Users/queennini/Downloads/Heartless (ACAPELLA).wav.wav"
 
 beat_drop = "/Users/queennini/Downloads/HG_Beat2.wav"
 
-HBK = "/Users/queennini/Downloads/HBK_aSample.wav"
+HBK = "/Users/queennini/Downloads/HBK_aSample copy.wav"
 
 x = 2
 define :bass1 do |n|
@@ -72,7 +72,7 @@ end
 sample heartless #TRANSITION
 
 live_loop :treble_clef do
-  sleep 13.6
+  sleep 13.8
   1.times do
     pattern :f5, 15, 0.15, 0.75
     
@@ -134,7 +134,7 @@ live_loop :treble_clef do
     
     c5s 2, 0.25
     
-    b_and_a 20, 0.5, 0.75, 30, 3
+    b_and_a 20, 0.5, 0.75, 30, 2.9
     
     4.times do
       pattern :d5, 1, 2, 0.25
@@ -157,7 +157,7 @@ live_loop :treble_clef do
 end
 
 live_loop :bass_clef do
-  sleep 30.25
+  sleep 30.45
   with_fx :eq do
     bass1 :bb2
     bass1 :c3
@@ -180,8 +180,8 @@ live_loop :bass_clef do
   end
 end
 
-sleep 45.55
+sleep 45.75
 sample beat_drop
 
-sleep 15.8
+sleep 16
 sample HBK #OUTRO
