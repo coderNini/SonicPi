@@ -4,7 +4,7 @@ use_bpm 148
 
 use_synth :piano
 
-vocals = "C:/Users/nia_robinson/Documents/Audacity/Mercy (ACAPELLA) Clip.wav"
+vocals = "/Users/queennini/Downloads/Mercy (ACAPELLA) Clip.wav"
 
 dun = "/Users/queennini/Downloads/DunDunDun.wav"
 
